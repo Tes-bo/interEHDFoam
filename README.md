@@ -71,7 +71,7 @@ $$
 
 ### Prerequisites
 
-- 🔧 **OpenFOAM v2406** or compatible version
+- 🔧 **OpenFOAM v1812** or compatible version
 - 💻 **GCC compiler** (recommended: GCC 7.0+)
 - 🔗 **MPI library** for parallel computing
 - 📊 **ParaView** for visualization (optional)
