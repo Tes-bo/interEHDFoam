@@ -1,0 +1,914 @@
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/SLListBase.H:302,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/SLList.H:35,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/UListIO.C:29,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/UList.C:398,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/UList.H:637,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.H:43,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/HashTable.C:30,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Istream.H:183,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ISstream.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/IOstreams.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:232,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/SLListBaseI.H: In member function ‘Foam::SLListBase::iterator Foam::SLListBase::begin()’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/SLListBaseI.H:243:16: warning: implicitly-declared ‘constexpr Foam::SLListBase::iterator::iterator(const Foam::SLListBase::iterator&)’ is deprecated [-Wdeprecated-copy]
+  243 |     return end();
+      |                ^
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/SLListBaseI.H:215:13: note: because ‘Foam::SLListBase::iterator’ has user-provided ‘void Foam::SLListBase::iterator::operator=(const Foam::SLListBase::iterator&)’
+  215 | inline void Foam::SLListBase::iterator::operator=(const iterator& iter)
+      |             ^~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/DLListBase.H:329,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/IDLList.H:36,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/entry.H:45,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dictionary.H:89,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Enum.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Enum.H:262,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/IOobject.H:79,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/regIOobject.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.H:42,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricScalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricFields.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:37,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/DLListBaseI.H: In member function ‘Foam::DLListBase::iterator Foam::DLListBase::begin()’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/DLListBaseI.H:320:16: warning: implicitly-declared ‘constexpr Foam::DLListBase::iterator::iterator(const Foam::DLListBase::iterator&)’ is deprecated [-Wdeprecated-copy]
+  320 |     return end();
+      |                ^
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/DLListBaseI.H:292:13: note: because ‘Foam::DLListBase::iterator’ has user-provided ‘void Foam::DLListBase::iterator::operator=(const Foam::DLListBase::iterator&)’
+  292 | inline void Foam::DLListBase::iterator::operator=(const iterator& iter)
+      |             ^~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/septernion.H:206,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/transformField.H:40,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeTemplates.C:30,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistribute.H:667,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/globalMeshDataTemplates.C:28,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/globalMeshData.H:626,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricBoundaryField.C:28,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.C:1338,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.H:696,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricScalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricFields.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:37,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/septernionI.H: In constructor ‘Foam::septernion::septernion(const vector&, const Foam::quaternion&)’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/septernionI.H:34:9: warning: implicitly-declared ‘Foam::quaternion::quaternion(const Foam::quaternion&)’ is deprecated [-Wdeprecated-copy]
+   34 |     r_(r)
+      |         ^
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/quaternion.H:304,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/transformField.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeTemplates.C:30,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistribute.H:667,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/globalMeshDataTemplates.C:28,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/globalMeshData.H:626,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricBoundaryField.C:28,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.C:1338,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.H:696,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricScalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricFields.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:37,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/quaternionI.H:526:13: note: because ‘Foam::quaternion’ has user-provided ‘void Foam::quaternion::operator=(const Foam::quaternion&)’
+  526 | inline void Foam::quaternion::operator=(const quaternion& q)
+      |             ^~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/septernion.H:206,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/transformField.H:40,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeTemplates.C:30,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistribute.H:667,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/globalMeshDataTemplates.C:28,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/globalMeshData.H:626,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricBoundaryField.C:28,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.C:1338,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.H:696,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricScalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricFields.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:37,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/septernionI.H: In constructor ‘Foam::septernion::septernion(const vector&)’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/septernionI.H:40:21: warning: implicitly-declared ‘Foam::quaternion::quaternion(const Foam::quaternion&)’ is deprecated [-Wdeprecated-copy]
+   40 |     r_(quaternion::I)
+      |                     ^
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/quaternion.H:304,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/transformField.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeTemplates.C:30,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistribute.H:667,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/globalMeshDataTemplates.C:28,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/globalMeshData.H:626,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricBoundaryField.C:28,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.C:1338,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.H:696,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricScalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricFields.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:37,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/quaternionI.H:526:13: note: because ‘Foam::quaternion’ has user-provided ‘void Foam::quaternion::operator=(const Foam::quaternion&)’
+  526 | inline void Foam::quaternion::operator=(const quaternion& q)
+      |             ^~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/septernion.H:206,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/transformField.H:40,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeTemplates.C:30,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistribute.H:667,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/globalMeshDataTemplates.C:28,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/globalMeshData.H:626,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricBoundaryField.C:28,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.C:1338,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.H:696,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricScalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricFields.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:37,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/septernionI.H: In constructor ‘Foam::septernion::septernion(const Foam::quaternion&)’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/septernionI.H:46:9: warning: implicitly-declared ‘Foam::quaternion::quaternion(const Foam::quaternion&)’ is deprecated [-Wdeprecated-copy]
+   46 |     r_(r)
+      |         ^
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/quaternion.H:304,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/transformField.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeTemplates.C:30,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistribute.H:667,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/globalMeshDataTemplates.C:28,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/globalMeshData.H:626,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricBoundaryField.C:28,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.C:1338,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.H:696,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricScalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricFields.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:37,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/quaternionI.H:526:13: note: because ‘Foam::quaternion’ has user-provided ‘void Foam::quaternion::operator=(const Foam::quaternion&)’
+  526 | inline void Foam::quaternion::operator=(const quaternion& q)
+      |             ^~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/autoPtr.H:284,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/runTimeSelectionTables.H:40,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/token.H:49,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Istream.H:47,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ISstream.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/IOstreams.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:232,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/autoPtrI.H: In instantiation of ‘static Foam::autoPtr<T> Foam::autoPtr<T>::New(Args&& ...) [with Args = {const Foam::IOobject&}; T = Foam::IOobject]’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/IOobject.H:304:48:   required from here
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/autoPtrI.H:35:23: warning: implicitly-declared ‘Foam::IOobject::IOobject(const Foam::IOobject&)’ is deprecated [-Wdeprecated-copy]
+   35 |     return autoPtr<T>(new T(std::forward<Args>(args)...));
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/regIOobject.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.H:42,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricScalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricFields.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:37,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/IOobject.H:497:14: note: because ‘Foam::IOobject’ has user-provided ‘void Foam::IOobject::operator=(const Foam::IOobject&)’
+  497 |         void operator=(const IOobject& io);
+      |              ^~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/SLList.H:36,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/UListIO.C:29,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/UList.C:398,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/UList.H:637,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.H:43,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/HashTable.C:30,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Istream.H:183,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ISstream.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/IOstreams.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:232,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/LList.H: In instantiation of ‘Foam::LList<LListBase, T>::iterator::iterator(Foam::LList<LListBase, T>::base_iterator) [with LListBase = Foam::SLListBase; T = int; Foam::LList<LListBase, T>::base_iterator = Foam::SLListBase::iterator]’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/LList.H:495:70:   required from ‘Foam::LList<LListBase, T>::iterator Foam::LList<LListBase, T>::begin() [with LListBase = Foam::SLListBase; T = int]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/PrimitivePatchPointAddressing.C:122:9:   required from ‘void Foam::PrimitivePatch<Face, FaceList, PointField, PointType>::calcPointFaces() const [with Face = Foam::face; FaceList = Foam::SubList; PointField = const Foam::Field<Foam::Vector<double> >&; PointType = Foam::Vector<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/PrimitivePatch.C:380:9:   required from ‘const labelListList& Foam::PrimitivePatch<Face, FaceList, PointField, PointType>::pointFaces() const [with Face = Foam::face; FaceList = Foam::SubList; PointField = const Foam::Field<Foam::Vector<double> >&; PointType = Foam::Vector<double>; Foam::labelListList = Foam::List<Foam::List<int> >]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volPointInterpolate.C:295:58:   required from ‘void Foam::volPointInterpolation::interpolateBoundaryField(const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&, Foam::GeometricField<Type, Foam::pointPatchField, Foam::pointMesh>&) const [with Type = double]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volPointInterpolate.C:332:5:   required from ‘void Foam::volPointInterpolation::interpolateBoundaryField(const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&, Foam::GeometricField<Type, Foam::pointPatchField, Foam::pointMesh>&, bool) const [with Type = double]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volPointInterpolate.C:360:5:   required from ‘void Foam::volPointInterpolation::interpolate(const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&, Foam::GeometricField<Type, Foam::pointPatchField, Foam::pointMesh>&) const [with Type = double]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volPointInterpolate.C:452:9:   required from ‘Foam::tmp<Foam::GeometricField<Type, Foam::pointPatchField, Foam::pointMesh> > Foam::volPointInterpolation::interpolate(const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&, const Foam::word&, bool) const [with Type = double]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volPointInterpolate.C:491:75:   required from ‘Foam::tmp<Foam::GeometricField<Type, Foam::pointPatchField, Foam::pointMesh> > Foam::volPointInterpolation::interpolate(const Foam::GeometricField<Type, Foam::fvPatchField, Foam::volMesh>&) const [with Type = double]’
+./EHD/creatEleFields.H:322:36:   required from here
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/LList.H:330:35: warning: implicitly-declared ‘constexpr Foam::SLListBase::iterator::iterator(const Foam::SLListBase::iterator&)’ is deprecated [-Wdeprecated-copy]
+  330 |                 base_iterator(iter)
+      |                                   ^
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/SLListBase.H:302,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/SLList.H:35,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/UListIO.C:29,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/UList.C:398,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/UList.H:637,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.H:43,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/HashTable.C:30,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Istream.H:183,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ISstream.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/IOstreams.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:232,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/SLListBaseI.H:215:13: note: because ‘Foam::SLListBase::iterator’ has user-provided ‘void Foam::SLListBase::iterator::operator=(const Foam::SLListBase::iterator&)’
+  215 | inline void Foam::SLListBase::iterator::operator=(const iterator& iter)
+      |             ^~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.H:583,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:40,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C: In instantiation of ‘void Foam::fvPatchField<Type>::autoMap(const Foam::fvPatchFieldMapper&) [with Type = Foam::SymmTensor<double>]’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:236:6:   required from here
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:275:30: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+  275 |                         f[i] = pif[i];
+      |                         ~~~~~^~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.H:583,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:40,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:289:30: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+  289 |                         f[i] = pif[i];
+      |                         ~~~~~^~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.H:416,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/scalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionSet.H:45,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedType.H:40,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedScalar.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedTypes.H:31,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.H:43,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricScalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricFields.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:37,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C: In instantiation of ‘void Foam::Field<Type>::rmap(const Foam::UList<T>&, const labelUList&) [with Type = Foam::SymmTensor<double>; Foam::labelUList = Foam::UList<int>]’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:305:22:   required from ‘void Foam::fvPatchField<Type>::rmap(const Foam::fvPatchField<Type>&, const labelList&) [with Type = Foam::SymmTensor<double>; Foam::labelList = Foam::List<int>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:299:6:   required from here
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:499:21: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+  499 |             f[mapI] = mapF[i];
+      |             ~~~~~~~~^~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatch.H:275,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchList.H:35,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvBoundaryMesh.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvMesh.H:53,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volMesh.H:36,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchTemplates.C: In instantiation of ‘Foam::tmp<Foam::Field<Type> > Foam::fvPatch::patchInternalField(const Foam::UList<T>&) const [with Type = Foam::SymmTensor<double>]’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:224:52:   required from ‘Foam::tmp<Foam::Field<Type> > Foam::fvPatchField<Type>::patchInternalField() const [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:222:1:   required from here
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchTemplates.C:43:20: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+   43 |         pif[facei] = f[faceCells[facei]];
+      |         ~~~~~~~~~~~^~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatch.H:275,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchList.H:35,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvBoundaryMesh.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvMesh.H:53,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volMesh.H:36,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchTemplates.C: In instantiation of ‘void Foam::fvPatch::patchInternalField(const Foam::UList<T>&, Foam::Field<Type>&) const [with Type = Foam::SymmTensor<double>]’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:231:5:   required from ‘void Foam::fvPatchField<Type>::patchInternalField(Foam::Field<Type>&) const [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:229:6:   required from here
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchTemplates.C:63:20: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+   63 |         pif[facei] = f[faceCells[facei]];
+      |         ~~~~~~~~~~~^~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.H:381,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/HashTable.C:30,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Istream.H:183,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ISstream.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/IOstreams.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:232,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.C: In instantiation of ‘Foam::List<T>::List(Foam::List<T>&, bool) [with T = Foam::SymmTensor<double>]’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/FieldI.H:116:48:   required from ‘Foam::Field<Type>::Field(const Foam::tmp<Foam::Field<Type> >&) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:260:25:   required from ‘void Foam::fvPatchField<Type>::autoMap(const Foam::fvPatchFieldMapper&) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:236:6:   required from here
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.C:268:23: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+  268 |                 vp[i] = ap[i];
+      |                 ~~~~~~^~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.H:381,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/HashTable.C:30,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Istream.H:183,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ISstream.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/IOstreams.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:232,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.C: In instantiation of ‘void Foam::List<T>::operator=(const Foam::UList<T>&) [with T = Foam::SymmTensor<double>]’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/FieldI.H:142:26:   required from ‘void Foam::Field<Type>::operator=(const Foam::UList<T>&) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:380:27:   required from ‘void Foam::fvPatchField<Type>::operator=(const Foam::UList<T>&) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:375:6:   required from here
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.C:481:23: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+  481 |                 vp[i] = ap[i];
+      |                 ~~~~~~^~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.H:381,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/HashTable.C:30,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Istream.H:183,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ISstream.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/IOstreams.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:232,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.C: In instantiation of ‘Foam::List<T>::List(const Foam::List<T>&) [with T = Foam::SymmTensor<double>]’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/FieldI.H:59:19:   required from ‘Foam::Field<Type>::Field(const Foam::Field<Type>&) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:432:21:   required from ‘void Foam::Field<Type>::autoMap(const Foam::FieldMapper&, bool) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:254:29:   required from ‘void Foam::fvPatchField<Type>::autoMap(const Foam::fvPatchFieldMapper&) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:236:6:   required from here
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.C:233:23: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+  233 |                 vp[i] = ap[i];
+      |                 ~~~~~~^~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.H:416,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/scalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionSet.H:45,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedType.H:40,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedScalar.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedTypes.H:31,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.H:43,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricScalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricFields.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:37,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C: In instantiation of ‘void Foam::Field<Type>::map(const Foam::UList<T>&, const labelUList&) [with Type = Foam::SymmTensor<double>; Foam::labelUList = Foam::UList<int>]’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:374:13:   required from ‘void Foam::Field<Type>::map(const Foam::UList<T>&, const Foam::FieldMapper&, bool) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:450:13:   required from ‘void Foam::Field<Type>::autoMap(const Foam::FieldMapper&, bool) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:254:29:   required from ‘void Foam::fvPatchField<Type>::autoMap(const Foam::fvPatchFieldMapper&) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:236:6:   required from here
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:280:22: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+  280 |                 f[i] = mapF[mapI];
+      |                 ~~~~~^~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/UList.H:637,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.H:43,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/HashTable.C:30,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Istream.H:183,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ISstream.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/IOstreams.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:232,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/UList.C: In instantiation of ‘void Foam::UList<T>::operator=(const T&) [with T = Foam::SymmTensor<double>]’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ListI.H:228:24:   required from ‘void Foam::List<T>::operator=(const T&) [with T = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/FieldI.H:178:26:   required from ‘void Foam::Field<Type>::operator=(const Type&) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:496:27:   required from ‘void Foam::fvPatchField<Type>::operator=(const Type&) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:491:6:   required from here
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/UList.C:208:15: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+  208 |         vp[i] = val;
+      |         ~~~~~~^~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBase.H:502,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/FieldMapper.H:35,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:26,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.H:416,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/scalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionSet.H:45,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedType.H:40,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedScalar.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedTypes.H:31,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.H:43,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricScalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricFields.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:37,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C: In instantiation of ‘static T Foam::mapDistributeBase::accessAndFlip(const Foam::UList<T>&, Foam::label, bool, const negateOp&) [with T = Foam::SymmTensor<double>; negateOp = Foam::noOp; Foam::label = int]’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C:141:40:   required from ‘static void Foam::mapDistributeBase::distribute(Foam::UPstream::commsTypes, const Foam::List<Foam::Pair<int> >&, Foam::label, const labelListList&, bool, const labelListList&, bool, Foam::List<T>&, const negateOp&, int) [with T = Foam::SymmTensor<double>; negateOp = Foam::noOp; Foam::label = int; Foam::labelListList = Foam::List<Foam::List<int> >]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C:1208:9:   required from ‘void Foam::mapDistributeBase::distribute(Foam::List<T>&, const negateOp&, int) const [with T = Foam::SymmTensor<double>; negateOp = Foam::noOp]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:440:13:   required from ‘void Foam::Field<Type>::autoMap(const Foam::FieldMapper&, bool) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:254:29:   required from ‘void Foam::fvPatchField<Type>::autoMap(const Foam::fvPatchFieldMapper&) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:236:6:   required from here
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C:92:15: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+   92 |             t = fld[index-1];
+      |             ~~^~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBase.H:502,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/FieldMapper.H:35,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:26,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.H:416,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/scalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionSet.H:45,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedType.H:40,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedScalar.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedTypes.H:31,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.H:43,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricScalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricFields.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:37,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C:105:15: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+  105 |             t = fld[index];
+      |             ~~^~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBase.H:502,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/FieldMapper.H:35,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:26,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.H:416,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/scalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionSet.H:45,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedType.H:40,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedScalar.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedTypes.H:31,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.H:43,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricScalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricFields.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:37,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C:110:11: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+  110 |         t = fld[index];
+      |         ~~^~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.H:381,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/HashTable.C:30,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Istream.H:183,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ISstream.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/IOstreams.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:232,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.C: In instantiation of ‘Foam::List<T>::List(const Foam::UList<T>&) [with T = Foam::SymmTensor<double>]’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/FieldI.H:66:20:   required from ‘Foam::Field<Type>::Field(const Foam::UList<T>&) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:361:21:   required from ‘void Foam::Field<Type>::map(const Foam::UList<T>&, const Foam::FieldMapper&, bool) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:450:13:   required from ‘void Foam::Field<Type>::autoMap(const Foam::FieldMapper&, bool) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:254:29:   required from ‘void Foam::fvPatchField<Type>::autoMap(const Foam::fvPatchFieldMapper&) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:236:6:   required from here
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.C:205:23: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+  205 |                 vp[i] = ap[i];
+      |                 ~~~~~~^~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBase.H:502,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/FieldMapper.H:35,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:26,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.H:416,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/scalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionSet.H:45,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedType.H:40,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedScalar.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedTypes.H:31,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.H:43,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricScalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricFields.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:37,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C: In instantiation of ‘static T Foam::mapDistributeBase::accessAndFlip(const Foam::UList<T>&, Foam::label, bool, const negateOp&) [with T = Foam::SymmTensor<double>; negateOp = Foam::flipOp; Foam::label = int]’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C:141:40:   required from ‘static void Foam::mapDistributeBase::distribute(Foam::UPstream::commsTypes, const Foam::List<Foam::Pair<int> >&, Foam::label, const labelListList&, bool, const labelListList&, bool, Foam::List<T>&, const negateOp&, int) [with T = Foam::SymmTensor<double>; negateOp = Foam::flipOp; Foam::label = int; Foam::labelListList = Foam::List<Foam::List<int> >]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C:1208:9:   required from ‘void Foam::mapDistributeBase::distribute(Foam::List<T>&, const negateOp&, int) const [with T = Foam::SymmTensor<double>; negateOp = Foam::flipOp]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C:1265:5:   required from ‘void Foam::mapDistributeBase::distribute(Foam::List<T>&, int) const [with T = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:436:13:   required from ‘void Foam::Field<Type>::autoMap(const Foam::FieldMapper&, bool) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:254:29:   required from ‘void Foam::fvPatchField<Type>::autoMap(const Foam::fvPatchFieldMapper&) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:236:6:   required from here
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C:92:15: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+   92 |             t = fld[index-1];
+      |             ~~^~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBase.H:502,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/FieldMapper.H:35,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:26,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.H:416,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/scalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionSet.H:45,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedType.H:40,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedScalar.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedTypes.H:31,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.H:43,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricScalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricFields.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:37,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C:105:15: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+  105 |             t = fld[index];
+      |             ~~^~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBase.H:502,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/FieldMapper.H:35,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:26,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.H:416,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/scalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionSet.H:45,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedType.H:40,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedScalar.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/dimensionedTypes.H:31,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricField.H:43,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricScalarField.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/GeometricFields.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFields.H:37,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolationScheme.H:307,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:41,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C:110:11: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+  110 |         t = fld[index];
+      |         ~~^~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:29,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ops.H: In instantiation of ‘void Foam::eqOp<T>::operator()(T&, const T&) const [with T = Foam::SymmTensor<double>]’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C:51:20:   required from ‘static void Foam::mapDistributeBase::flipAndCombine(const labelUList&, bool, const Foam::UList<T>&, const CombineOp&, const negateOp&, Foam::List<T>&) [with T = Foam::SymmTensor<double>; CombineOp = Foam::eqOp<Foam::SymmTensor<double> >; negateOp = Foam::noOp; Foam::labelUList = Foam::UList<int>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C:150:9:   required from ‘static void Foam::mapDistributeBase::distribute(Foam::UPstream::commsTypes, const Foam::List<Foam::Pair<int> >&, Foam::label, const labelListList&, bool, const labelListList&, bool, Foam::List<T>&, const negateOp&, int) [with T = Foam::SymmTensor<double>; negateOp = Foam::noOp; Foam::label = int; Foam::labelListList = Foam::List<Foam::List<int> >]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C:1208:9:   required from ‘void Foam::mapDistributeBase::distribute(Foam::List<T>&, const negateOp&, int) const [with T = Foam::SymmTensor<double>; negateOp = Foam::noOp]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:440:13:   required from ‘void Foam::Field<Type>::autoMap(const Foam::FieldMapper&, bool) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:254:29:   required from ‘void Foam::fvPatchField<Type>::autoMap(const Foam::fvPatchFieldMapper&) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:236:6:   required from here
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ops.H:69:12: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+   69 | EqOp(eq, x = y)
+      |          ~~^~~
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ops.H:64:13: note: in definition of macro ‘EqOp’
+   64 |             op;                                                                \
+      |             ^~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.C:634,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/List.H:381,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/HashTable.C:30,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Istream.H:183,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ISstream.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/IOstreams.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.C:27,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:232,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ListIO.C: In instantiation of ‘Foam::Istream& Foam::operator>>(Foam::Istream&, Foam::List<T>&) [with T = Foam::SymmTensor<double>]’:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ListIO.C:39:15:   required from ‘Foam::List<T>::List(Foam::Istream&) [with T = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C:223:25:   required from ‘static void Foam::mapDistributeBase::distribute(Foam::UPstream::commsTypes, const Foam::List<Foam::Pair<int> >&, Foam::label, const labelListList&, bool, const labelListList&, bool, Foam::List<T>&, const negateOp&, int) [with T = Foam::SymmTensor<double>; negateOp = Foam::noOp; Foam::label = int; Foam::labelListList = Foam::List<Foam::List<int> >]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/mapDistributeBaseTemplates.C:1208:9:   required from ‘void Foam::mapDistributeBase::distribute(Foam::List<T>&, const negateOp&, int) const [with T = Foam::SymmTensor<double>; negateOp = Foam::noOp]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Field.C:440:13:   required from ‘void Foam::Field<Type>::autoMap(const Foam::FieldMapper&, bool) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:254:29:   required from ‘void Foam::fvPatchField<Type>::autoMap(const Foam::fvPatchFieldMapper&) [with Type = Foam::SymmTensor<double>]’
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvPatchField.C:236:6:   required from here
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/ListIO.C:115:33: warning: implicitly-declared ‘Foam::SymmTensor<double>& Foam::SymmTensor<double>::operator=(const Foam::SymmTensor<double>&)’ is deprecated [-Wdeprecated-copy]
+  115 |                         list[i] = element;  // Copy the value
+      |                         ~~~~~~~~^~~~~~~~~
+In file included from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpace.H:229,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/Vector.H:44,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/vector.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/fieldTypes.H:34,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/volFieldsFwd.H:38,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/surfaceInterpolate.H:39,
+                 from /home/cots/OpenFOAM/OpenFOAM-v1812/src/finiteVolume/lnInclude/fvc.H:39,
+                 from ../VoFLibrary-master/src/VoF/lnInclude/advectionSchemes.H:37,
+                 from interEHDFoam.C:2:
+/home/cots/OpenFOAM/OpenFOAM-v1812/src/OpenFOAM/lnInclude/VectorSpaceI.H:289:13: note: because ‘Foam::SymmTensor<double>’ has user-provided ‘void Foam::VectorSpace<Form, Cmpt, Ncmpts>::operator=(const Foam::VectorSpace<Form, Cmpt, Ncmpts>&) [with Form = Foam::SymmTensor<double>; Cmpt = double; unsigned char Ncmpts = 6]’
+  289 | inline void VectorSpace<Form, Cmpt, Ncmpts>::operator=
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

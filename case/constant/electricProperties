@@ -1,0 +1,50 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      electricProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// 1-fluid
+// 2-air
+sig1           [-1 -3 3 0 0 2 0] 9e-7;  // ele conductivity
+sig2           [-1 -3 3 0 0 2 0] 1.05e-15;
+
+eps1           [-1 -3 4 0 0 2 0] 8.845e-11;  // jie dian chang shu
+eps2           [-1 -3 4 0 0 2 0] 8.845e-12;  // jie dian chang shu
+
+D1 2;
+D2 2;
+
+
+settings
+{
+
+    limitFlux true;
+
+
+    // NP Herrera leakyDielectric
+    equationType     Herrera;
+
+    // linear harmonic
+    averageMethod    harmonic;
+
+    // Dis gradient
+    electricFieldModel gradient;
+
+    // tenser DIVtenser volumetric
+    forceType  DIVtenser;
+}
+
+
+// ************************************************************************* //

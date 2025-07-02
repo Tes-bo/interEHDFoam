@@ -1,0 +1,51 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      initAlphaFieldDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+field "alpha.phase1";
+
+type composedFunction;
+mode add;
+composedFunction
+{
+    plane
+    {
+        type plane;
+        origin (0 1. 0);
+        normal (0 1 0);
+
+    }
+
+    sphere
+    {
+        type sphere;
+        radius 0.4;
+        origin (0.5 0.8 0.5);
+        scale 1;
+    }
+
+    sphere2
+    {
+        type sphere;
+        radius 0.4;
+        origin (0.5 0.5 0.5);
+    }
+
+
+}
+
+
+// ************************************************************************* //

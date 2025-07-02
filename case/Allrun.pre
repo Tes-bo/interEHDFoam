@@ -1,0 +1,19 @@
+#!/bin/sh
+cd ${0%/*} || exit 1                        # Run from this directory
+. $WM_PROJECT_DIR/bin/tools/RunFunctions    # Tutorial run functions
+
+#restore0Dir
+rm -rf log*
+rm -rf 0
+cp -r 0.orig 0
+
+runApplication blockMesh -dict system/blockMeshDict.EHD.coarse
+
+#runApplication decomposePar
+#runParallel setFields
+#runParallel $(getApplication)
+
+runApplication setFields
+#runApplication $(getApplication)
+
+#------------------------------------------------------------------------------
