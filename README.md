@@ -1,6 +1,6 @@
 # ⚡ interEHD - ElectroHydroDynamics Two-Phase Flow Solver
 
-[![OpenFOAM](https://img.shields.io/badge/OpenFOAM-v2406-blue.svg)](https://www.openfoam.com/)
+[![OpenFOAM](https://img.shields.io/badge/OpenFOAM-v1812-blue.svg)](https://www.openfoam.com/)
 [![License](https://img.shields.io/badge/License-GPL--3.0-red.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active-green.svg)]()
 
