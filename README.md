@@ -8,7 +8,7 @@
 
 ## 📖 Overview
 
-**interEHD** is a specialized computational fluid dynamics (CFD) solver built upon OpenFOAM's `interFoam` framework, specifically designed for simulating electrohydrodynamic (EHD) phenomena in two-phase flow systems. The solver combines:
+**interEHDFoam** is a specialized computational fluid dynamics (CFD) solver built upon OpenFOAM's `interFoam` framework, specifically designed for simulating electrohydrodynamic (EHD) phenomena in two-phase flow systems. The solver combines:
 
 - ⚡ **Electrohydrodynamics**: Electric field effects on fluid motion
 - 🌊 **Two-Phase Flow**: Immiscible fluid interface tracking
