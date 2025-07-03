@@ -1,4 +1,4 @@
-# ⚡ interEHD - ElectroHydroDynamics Two-Phase Flow Solver
+# ⚡ interEHDFoam - ElectroHydroDynamics Two-Phase Flow Solver
 
 [![OpenFOAM](https://img.shields.io/badge/OpenFOAM-v1812-blue.svg)](https://www.openfoam.com/)
 [![License](https://img.shields.io/badge/License-GPL--3.0-red.svg)](LICENSE)
@@ -81,8 +81,8 @@ $$
 1. **Clone the repository**
    ```bash
    cd $FOAM_RUN
-   git clone <repository-url> interEHD
-   cd interEHD
+   git clone https://github.com/Tes-bo/interEHDFoam.git
+   cd interEHDFoam
    ```
 
 2. **Compile the solver**
@@ -125,7 +125,7 @@ $$
 ## 📁 Project Structure
 
 ```
-interEHD/
+interEHDFoam/
 ├── 📂 interEHDFoam/           # Main solver source code
 │   ├── 📄 interEHDFoam.C      # Main solver file
 │   ├── 📂 EHD/                # Electric field modules
@@ -227,7 +227,7 @@ This project is licensed under the **GPL-3.0 License** - see the [LICENSE](LICEN
 
 ## 👨‍💻 Developer
 
-**interEHD** is developed and maintained by:
+**interEHDFoam** is developed and maintained by:
 
 - 🧑‍💻 **Developer**: seeeeeeeeeeer
 - 📧 **Contact**: cotsqa@qq.com
